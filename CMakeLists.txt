@@ -15,9 +15,13 @@ FetchContent_MakeAvailable(SFML)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED true)
 
+include_directories(include)
+
+file(GLOB SOURCES "src/*.cpp" "src/engine/*.cpp")
+
 add_executable(
 	SfmlWithCMake
-	"src/main.cpp"
+	${SOURCES}
 )
 target_link_libraries(
 	SfmlWithCMake
