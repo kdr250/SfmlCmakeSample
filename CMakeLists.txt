@@ -17,7 +17,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED true)
 
 include_directories(include)
 
-file(GLOB SOURCES "src/*.cpp" "src/engine/*.cpp")
+file(GLOB_RECURSE SOURCES "src/*.cpp")
 
 add_executable(
 	SfmlWithCMake
