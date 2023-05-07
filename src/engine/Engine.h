@@ -2,14 +2,17 @@
 
 #include <SFML/Graphics.hpp>
 
-class Engine 
+class Engine
 {
 private:
-  sf::RenderWindow window;
-  sf::CircleShape shape;
+    sf::RenderWindow window;
+    sf::CircleShape shape;
+
+    sf::Font font;
+    sf::Text text;
 
 public:
-  Engine();
+    Engine();
 
-  void run();
+    void run();
 };
